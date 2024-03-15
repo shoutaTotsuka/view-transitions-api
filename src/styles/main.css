@@ -192,9 +192,15 @@
       grid-template-columns: auto 1fr auto;
       gap: 0.5em;
       align-items: center;
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: block-axis;
+        -webkit-line-clamp: 1;
+        contain: content;
+        max-block-size: 1lh;
+      }
       a {
-        padding: 0.2em 0.6em;
-        border: 1px solid white;
+        padding: 0.4em 0.6em;
         border-radius: 4px;
         font-size: clamp(0.625rem, 0.568rem + 0.29vw, 0.75rem);
         font-weight: normal;
@@ -216,7 +222,8 @@
         row-gap: calc(var(--space) * 0.5);
         > .image {
           aspect-ratio: 16 / 9;
-          clip-path: inset(0 round 8px);
+          clip-path: inset(0 round 6px);
+          transition: scale 0.3s ease;
         }
         > .title {
           font-size: 1.4rem;
@@ -232,6 +239,14 @@
           color: hsl(var(--secondary));
           line-height: 2cap;
         }
+        @media (hover: hover) {
+          &:hover {
+            > .image {
+              scale: 1.05;
+            }
+          }
+        }
+
       }
     }
   }
@@ -257,7 +272,7 @@
       }
       > .image {
         aspect-ratio: 16 / 9;
-        clip-path: inset(0 round 8px);
+        clip-path: inset(0 round 6px);
         margin-block-end: calc(var(--layout-space) / 2);
       }
       > .description {
