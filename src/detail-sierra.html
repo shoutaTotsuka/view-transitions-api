@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Sierra</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main id="view-detail">
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-6"
+          >
+            Sierra
+          </h2>
+          <p>September 20, 2016</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/sierra.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-6"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>macOSシリーズの13番目で、バージョンナンバーは10.12。名前は、カリフォルニア州にあるシエラネバダ山脈から付けられたが、「Sierra」はスペイン語で「山脈」を指す。<br/><br/>OS X El Capitanの後継バージョンとして、2016年9月20日に無料でリリースされた[1]。</p>
+          <a href="/">← Back to index</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Ventura</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main id="view-detail">
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-2"
+          >
+            Ventura
+          </h2>
+          <p>July 11, 2023</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/ventura.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-2"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>macOS Montereyの後継として、2022年6月7日（日本時間）のWWDC 2022の基調講演で2022年秋にリリース予定と発表された。macOSの19番目のメジャーリリース。バージョンナンバーは13で、OSの名称は、カリフォルニア州ベンチュラ郡にあるサンブエナベンチュラという都市の通称のベンチュラに由来する。<br/><br/>これまでのmacOS同様に、The Open Groupに正式に認定されたUNIXである。</p>
+          <a href="/">← Back to index</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

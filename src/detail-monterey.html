@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Monterey</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main
+      id="view-detail"
+      data-view-transition-name="detail"
+      style="--view-transition-name: detail-3"
+    >
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-3"
+          >
+            Monterey
+          </h2>
+          <p>October 25, 2021</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/monterey.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-3"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>macOS Big Surの後継として、2021年6月7日のWWDC 2021の基調講演で同年秋にリリース予定と発表され[2]、同年10月25日より無償配布されている[3]。名前はカリフォルニア州モントレー郡にあるモントレーという町に由来する。<br/><br/>macOSの18番目のメジャーリリースで、バージョンナンバーは12。これまでのmacOS同様に、The Open Groupに正式に認定されたUNIXである[4][5]。</p>
+          <a href="/">← Back to index</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+</body>
+</html>

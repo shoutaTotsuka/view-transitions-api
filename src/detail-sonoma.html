@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Sonoma</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main id="view-detail">
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-1"
+          >
+            Sonoma
+          </h2>
+          <p>July 11, 2023</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/sonoma.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-1"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>macOS Venturaの後継としてWWDC2023の基調講演にて2023年6月5日に発表。バージョンナンバーは14で、米カリフォルニア州のワイン産地のソノマ郡から命名された。<br/><br/>macOS Sonomaは、特に生産性を高め、クリエイティブな面を発展させた多数の新機能を備えている。</p>
+          <a href="/">← Back to index</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Big Sur</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main
+      id="view-detail"
+      data-view-transition-name="detail"
+      style="--view-transition-name: detail-4"
+    >
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-4"
+          >
+            Big Sur
+          </h2>
+          <p>November 10, 2020</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/bigsur.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-4"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>名前はカリフォルニア州セントラルコーストにある沿岸地域ビッグサーに由来する。バージョンナンバーは11となり、Mac OS X Public Beta以降の20年近く用いられてきたメジャーバージョンである10から変更された。<br/><br/>従来のIntelベースのMacに加えてAppleシリコンを搭載したMac上でも動作する。macOSが複数のアーキテクチャに対応するのはv10.5 Leopard以来約13年ぶりである。ユーザーインターフェースが大幅に変更されたほか、開発者によって許可されたiOSとiPadOSのアプリが動作するようにもなった。</p>
+          <a href="/">← Back to index</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

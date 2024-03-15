@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Catalina</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main
+      id="view-detail"
+      data-view-transition-name="detail"
+      style="--view-transition-name: detail-5"
+    >
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-5"
+          >
+            Catalina
+          </h2>
+          <p>October 8, 2019</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/catalina.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-5"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>macOS Mojaveの後継として、2019年6月3日のWWDC 2019の基調講演で発表され[1]、同年10月8日にリリースされた[2]。名前はカリフォルニア州ロサンゼルス沖に浮かぶサンタカタリナ島から付けられた。<br/><br/>Mac OS X v10.0以来、20年近くにわたりリリースされ続けてきた「10.x」シリーズの最後のバージョンである[3]。<br/>Appleはサポート終了日を公表していないものの、後継バージョンである11、12、13が2023年1月23日に更新されていながら、10の最終更新は2022年7月20日で途絶えており、事実上サポートは終了している状態にある。</p>
+          <a href="/">← Back to index</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
