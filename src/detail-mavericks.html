@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view-transition" content="same-origin" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API | Mavericks</title>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main
+      id="view-detail"
+      data-view-transition-name="detail"
+      style="--view-transition-name: detail-7"
+    >
+      <div class="container-basis">
+
+        <div class="medContent title">
+          <h2
+            data-view-transition-name="title"
+            style="--view-transition-name: title-7"
+          >
+            Mavericks
+          </h2>
+          <p>October 22,2013</p>
+        </div>
+
+        <div class="maxContent image">
+          <img
+            class="image detail-image"
+            src="./images/mavericks.jpg.webp"
+            alt=""
+            data-view-transition-name="thumbnail"
+            style="--view-transition-name: thumbnail-7"
+          />
+        </div>
+
+        <div class="medContent description">
+          <p>バージョンナンバーは10.9で、OS X Mountain Lionの後継バージョンとして2013年10月22日に無料でリリースされた。OS本体の最終セキュリティアップデートは、2016年7月18日にリリースされたセキュリティアップデート 2016-004[2]である。<br/><br/>名前は、カリフォルニア州のサーフィン場、マーベリックスから付けられた。</p>
+          <a href="/">← Back to index</a>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>
