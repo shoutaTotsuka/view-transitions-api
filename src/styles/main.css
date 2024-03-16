@@ -58,7 +58,7 @@
 
 @layer base {
   html {
-    word-break: auto-phrase;
+    /* word-break: auto-phrase; */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     &:has(dialog[open]) {
       touch-action: none;
@@ -101,9 +101,6 @@
     --min-inline-size: 700px;
     --med-inline-size: 860px;
     --max-inline-size: 1120px;
-    /* --content: min(100%, var(--min-inline-size));
-    --max-content: min(calc(100% - calc(var(--layout-space) * 2)), var(--max-inline-size)); */
-
 
     --inline-space: var(--layout-space);
     --minContent: min(calc(100% - var(--inline-space) * 2), var(--min-inline-size));
@@ -172,6 +169,7 @@
   }
   main {
     margin-block-end: var(--layout-space);
+    padding-block-end: env(safe-area-inset-bottom);
   }
 }
 
@@ -259,6 +257,7 @@
       > .title {
         display: flex;
         flex-direction: column;
+        gap: 0.4em;
         margin-block-end: calc(var(--layout-space) / 2);
         > h2 {
           font-size: 2.8rem;
@@ -277,9 +276,6 @@
         margin-block-end: calc(var(--layout-space) / 2);
       }
       > .description {
-        /* display: grid; */
-        /* grid-template-columns: 1fr; */
-        /* gap: var(--space); */
         > p {
           font-size: clamp(1.063rem, 1.034rem + 0.14vw, 1.125rem);
           margin-block-end: var(--layout-space);
