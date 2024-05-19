@@ -294,8 +294,8 @@
 }
 
 @layer page {
-  *[data-view-transition-name] {
-    view-transition-name: var(--view-transition-name);
+  *[data-view-transition-class] {
+    view-transition-class: var(--view-transition-class);
     contain: paint;
   }
   ::view-transition-group(root),
