@@ -1,3 +1,6 @@
+@view-transition {
+  navigation: auto;
+}
 @layer reset, theme, base, layout, page, component;
 @layer reset {
   *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
