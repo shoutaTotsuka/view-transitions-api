@@ -1,6 +1,7 @@
 @view-transition {
   navigation: auto;
 }
+
 @layer reset, theme, base, layout, page, component;
 @layer reset {
   *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -294,8 +295,20 @@
 }
 
 @layer page {
-  *[data-view-transition-class] {
-    view-transition-class: var(--view-transition-class);
+  /* html:active-view-transition-type(forwards, backwards) {
+    :root {
+      view-transition-name: none;
+    }
+    article {
+      view-transition-name: content;
+    }
+    .pagination {
+      view-transition-name: pagination;
+    }
+  }   */
+
+  *[data-view-transition-name] {
+    view-transition-name: var(--view-transition-name);
     contain: paint;
   }
   ::view-transition-group(root),
