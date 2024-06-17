@@ -4,7 +4,7 @@
 
 @layer reset, theme, base, layout, page, component;
 @layer reset {
-  *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *, ::slotted(*))) {
     all: unset;
     display: revert;
   }
@@ -15,6 +15,10 @@
   ol, ul, menu, summary {
     list-style: none;
     list-style-position: inside;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
   }
   img {
     max-inline-size: 100%;
@@ -115,7 +119,7 @@
     position: relative;
     min-block-size: 100svb;
     padding-block-end: env(safe-area-inset-bottom);
-    display: grid;
+    /* display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr;
     grid-template-areas: 'header'
@@ -124,7 +128,7 @@
       grid-template-areas: 'header'
                            'aside'
                            'main';
-    }
+    } */
     :where(.container-basis) {
       inline-size: 100%;
       display: grid;
@@ -255,7 +259,6 @@
 @layer page {
   #view-detail {
     .container-basis {
-
       > .title {
         display: flex;
         flex-direction: column;
@@ -293,7 +296,6 @@
 }
 
 @layer page {
-
   *[data-view-transition-name] {
     view-transition-name: var(--view-transition-name);
     contain: paint;

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./custom-elements/slider.js"></script>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>View Transitions API</title>
+</head>
+<body>
+  <div id="root" class="top">
+    <header>
+      <div class="container-basis">
+        <div class="medContent">
+          <h1>
+            <a href="/">View Transitions API Demo</a>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main id="view-index">
+      <div class="container-basis">
+        <div class="medContent">
+          <custom-slider style="--column: 100%; --gap: 16px; --inline: 1920; --block: 1080;">
+            <div slot="slide"><img loading="lazy" src="./images/sonoma.jpg.webp" alt="" /></div>
+            <div slot="slide"><img loading="lazy" src="./images/ventura.jpg.webp" alt="" /></div>
+            <div slot="slide"><img loading="lazy" src="./images/monterey.jpg.webp" alt="" /></div>
+          </custom-slider>
+          <custom-slider style="--column: calc(100% / 3); --gap: 8px; --inline: 1920; --block: 1080;">
+            <div slot="slide"><a href=""><img loading="lazy" src="./images/bigsur.jpg.webp" alt="" /></a></div>
+            <div slot="slide"><img loading="lazy" src="./images/catalina.jpg.webp" alt="" /></div>
+            <div slot="slide"><img loading="lazy" src="./images/sierra.jpg.webp" alt="" /></div>
+            <div slot="slide"><img loading="lazy" src="./images/mavericks.jpg.webp" alt="" /></div>
+          </custom-slider>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
